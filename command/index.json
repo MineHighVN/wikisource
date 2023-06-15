@@ -1,8 +1,8 @@
 [
     {
-        "title": "execute",
-        "description": "Lệnh execute trong Minecraft",
+        "title": "/gamemode",
+        "description": "Có lẽ ai cũng đã sử dụng lệnh gamemode ít nhất một lần rồi, nhưng đây là Minecraft Wiki nên chúng ta cũng cần phải giải thích rõ ràng về lệnh này",
         "author": "MineHighVN",
-        "path": "/execute.docx"
+        "path": "/gamemode.txt"
     }
 ]
