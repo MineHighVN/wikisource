@@ -1,1 +1,10 @@
-
+{
+    "prefix": "/wiki",
+    "topic": [
+        {
+            "title": "Command",
+            "description": "Tất cả những câu lệnh trong Minecraft đều tập hợp ở đây",
+            "path": "/command"
+        }
+    ]
+}
