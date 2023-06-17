@@ -7,7 +7,7 @@
             "path": "/command"
         },
         {
-            "title": "@minecraft/server"
+            "title": "@minecraft/server",
             "description": "Lõi của Minecraft Addons",
             "path": "/@minecraft-server"
         }
