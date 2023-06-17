@@ -5,6 +5,11 @@
             "title": "Command",
             "description": "Tất cả những câu lệnh trong Minecraft đều tập hợp ở đây",
             "path": "/command"
+        },
+        {
+            "title": "@minecraft/server"
+            "description": "Lõi của Minecraft Addons",
+            "path": "/@minecraft-server"
         }
     ]
 }
