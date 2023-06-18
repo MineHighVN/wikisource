@@ -1,5 +1,52 @@
-<h1>@minecraft/server Module</h1><p><br></p><p>Tác giả: MineHighVN</p><p>Thời gian tạo: 17/06/2023</p><p><br></p><p>Lưu ý: Tùy từng phiên bản Minecraft mà sẽ có phiên bản @minecraft/server khác nhau và phiên bản @minecraft/server cao hơn có thể sẽ hỗ trợ cho phiên bản thấp hơn, nhưng phiên bản thấp hơn sẽ không hỗ trợ cho phiên bản cao hơn</p><p><br></p><p>manifest.json:</p><pre class="ql-syntax" spellcheck="false"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"module_name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"@minecraft/server"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"version"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"1.3.0"</span>
+<h1>@minecraft/server Module</h1><p><br></p><p>Tác giả: MineHighVN</p><p>Thời gian tạo: 17/06/2023</p><p><br></p><p>Lưu ý: Tùy từng phiên bản Minecraft mà sẽ có phiên bản API (@minecraft/server) khác nhau và phiên bản API cao hơn có thể sẽ hỗ trợ cho phiên bản thấp hơn, nhưng phiên bản thấp hơn sẽ không hỗ trợ cho phiên bản cao hơn</p><p><br></p><p>Bố cục của một file manifest.json (bạn có thể copy về vì không nhất thiết phải nhớ đống này):</p><pre class="ql-syntax" spellcheck="false"><span class="hljs-punctuation">{</span>
+	<span class="hljs-attr">"format_version"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">2</span><span class="hljs-punctuation">,</span>
+	<span class="hljs-attr">"metadata"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+		<span class="hljs-attr">"authors"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+			<span class="hljs-string">"Tên tác giả"</span>
+		<span class="hljs-punctuation">]</span>
+	<span class="hljs-punctuation">},</span>
+	<span class="hljs-attr">"header"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+		<span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Tên Addons"</span><span class="hljs-punctuation">,</span>
+		<span class="hljs-attr">"description"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Mô tả addons"</span><span class="hljs-punctuation">,</span>
+		<span class="hljs-attr">"min_engine_version"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+			<span class="hljs-number">1</span><span class="hljs-punctuation">,</span>
+			<span class="hljs-number">19</span><span class="hljs-punctuation">,</span>
+			<span class="hljs-number">80</span>
+		<span class="hljs-punctuation">],</span>
+		<span class="hljs-attr">"uuid"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"44199a71-778a-4a88-9602-10ef1ea9910e"</span><span class="hljs-punctuation">,</span>
+		<span class="hljs-attr">"version"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+			<span class="hljs-number">1</span><span class="hljs-punctuation">,</span>
+			<span class="hljs-number">0</span><span class="hljs-punctuation">,</span>
+			<span class="hljs-number">0</span>
+		<span class="hljs-punctuation">]</span>
+	<span class="hljs-punctuation">},</span>
+	<span class="hljs-attr">"modules"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+		<span class="hljs-punctuation">{</span>
+			<span class="hljs-attr">"type"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"data"</span><span class="hljs-punctuation">,</span>
+			<span class="hljs-attr">"uuid"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"382fa177-dac7-4e88-9ce0-326c596481ce"</span><span class="hljs-punctuation">,</span>
+			<span class="hljs-attr">"version"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+				<span class="hljs-number">1</span><span class="hljs-punctuation">,</span>
+				<span class="hljs-number">0</span><span class="hljs-punctuation">,</span>
+				<span class="hljs-number">0</span>
+			<span class="hljs-punctuation">]</span>
+		<span class="hljs-punctuation">},</span>
+		<span class="hljs-punctuation">{</span>
+			<span class="hljs-attr">"type"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"script"</span><span class="hljs-punctuation">,</span>
+			<span class="hljs-attr">"language"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"javascript"</span><span class="hljs-punctuation">,</span>
+			<span class="hljs-attr">"uuid"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"901ab854-23f8-46fd-917b-c5dd5b2ddfd4"</span><span class="hljs-punctuation">,</span>
+			<span class="hljs-attr">"entry"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"scripts/main.js"</span><span class="hljs-punctuation">,</span>
+			<span class="hljs-attr">"version"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+				<span class="hljs-number">1</span><span class="hljs-punctuation">,</span>
+				<span class="hljs-number">0</span><span class="hljs-punctuation">,</span>
+				<span class="hljs-number">0</span>
+			<span class="hljs-punctuation">]</span>
+		<span class="hljs-punctuation">}</span>
+	<span class="hljs-punctuation">],</span>
+	<span class="hljs-attr">"dependencies"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+		<span class="hljs-punctuation">{</span>
+			<span class="hljs-attr">"module_name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"@minecraft/server"</span><span class="hljs-punctuation">,</span>
+			<span class="hljs-attr">"version"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"phiên bản của API"</span>
+		<span class="hljs-punctuation">}</span>
+	<span class="hljs-punctuation">]</span>
 <span class="hljs-punctuation">}</span>
-</pre><p>Tất cả phiên bản có sẵn:</p><ul><li>1.4.0-beta</li><li>1.3.0</li><li>1.3.0-beta</li><li>1.2.0</li><li>1.1.0</li><li>0.1.0</li></ul>
+</pre><p><br></p><p>Chú thích khác:</p><p>"min_engine_version" là phiên bản Minecraft tối thiểu để chạy command, ví dụ: Minecraft 1.18.31 sẽ ghi là: "min_engine_version": [1,18,31]</p><p><br></p><p>Lưu ý: trong phần "modules" và "header" các "uuid" cần là một giá trị khác nhau, bạn có thể tạo ra giá trị này trên mạng bằng cách ghi: UUIDv4 online generator</p><p><br></p><p>Tất cả phiên bản API có sẵn:</p><ul><li>1.4.0-beta</li><li>1.3.0</li><li>1.3.0-beta</li><li>1.2.0</li><li>1.1.0</li><li>0.1.0</li></ul><p><br></p>
