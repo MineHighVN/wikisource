@@ -1,7 +1,7 @@
 [
     {
         "title": "/gamemode",
-        "description": "Lệnh này để thay đổi chế độ của người chơi được chỉ định",
+        "description": "Lệnh này để thay đổi chế độ chơi của người chơi được chỉ định",
         "author": "MineHighVN",
         "path": "/gamemode.txt"
     },
